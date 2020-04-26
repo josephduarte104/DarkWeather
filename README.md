@@ -7,15 +7,12 @@ A weather app that was developed on the premise of a personal challenge to turn 
 
 # Install REquirements
 
-'''
-pip3 install -r requirements.txt
-'''
+  pip3 install -r requirements.txt
 
 # run application
 
-'''
-python3 app.py
-'''
+  python3 app.py
+
 
 
 Working app found at <http://darkweatherprototype.herokuapp.com> 
