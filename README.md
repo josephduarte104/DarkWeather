@@ -7,11 +7,11 @@ A weather app that was developed on the premise of a personal challenge to turn 
 
 #### Install Requirements
 
-    pip3 install -r requirements.txt
+   _ pip3 install -r requirements.txt_
 
 #### Run application
 
-    python3 app.py
+    _python3 app.py_
 
 
 
