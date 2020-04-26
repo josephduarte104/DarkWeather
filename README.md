@@ -9,7 +9,7 @@ A weather app that was developed on the premise of a personal challenge to turn 
 
     pip3 install -r requirements.txt
 
-#### run application
+#### Run application
 
     python3 app.py
 
