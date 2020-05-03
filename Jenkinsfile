@@ -38,7 +38,7 @@ pipeline {
       steps {
         input 'Deploy to Production?'
         milestone 1
-        kubernetesDeploy(kubeconfigId: 'kubeconfig', configs: 'kube-dark-weather.yml', enableConfigSubstitution: true)
+        kubernetesDeploy(kubeconfigId: 'kubeconfig', configs: 'kube-dark.yml', enableConfigSubstitution: true)
       }
     }
 
