@@ -44,6 +44,6 @@ pipeline {
 
   }
   environment {
-    DOCKER_IMAGE_NAME = 'jduarte104/Darkweather'
+    DOCKER_IMAGE_NAME = 'jduarte104/darkweather'
   }
 }
