@@ -4,14 +4,7 @@ pipeline {
         //be sure to replace "Jduarte104" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "jduarte104/Darkweather"
     }
-    //stages {
-    //    stage('Build') {
-    //        steps {
-    //            echo 'Running build automation'
-    //            sh './gradlew build --no-daemon'
-    //            archiveArtifacts artifacts: 'dist/trainSchedule.zip'
-    //        }
-     //  }
+    stages {
         stage('Build Docker Image') {
             when {
                 branch 'master'
