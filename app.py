@@ -4,8 +4,10 @@ import googlemaps
 import json
 from datetime import datetime
 from werkzeug.contrib.cache import SimpleCache
+import flask_monitoringdashboard as dashboard
 cache = SimpleCache()
 app = Flask(__name__)
+dashboard.bind(app)
 gmaps = googlemaps.Client(key='AIzaSyDsH4bT2HDycUdnA4OK3nHmU0Ws0AMmUYc')
 geocode_result = gmaps.geocode('1600 Amphitheatre Parkway, Mountain View, CA')
 #google api key AIzaSyDsH4bT2HDycUdnA4OK3nHmU0Ws0AMmUYc
