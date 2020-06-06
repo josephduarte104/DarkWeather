@@ -1,6 +1,5 @@
 FROM python:3.6-slim-buster
 RUN apt-get update && apt-get install -y --no-install-recommendsRUN apt-get -y install python3-dev
-RUN apt-get -y install python3-dev
 COPY . /app
 WORKDIR /app
 RUN pip install flask_monitoringdashboard
