@@ -14,9 +14,7 @@ jsonschema==2.6.0
 jupyter-core==4.3.0
 MarkupSafe==1.1.1
 nbformat==4.3.0
-numpy==1.16.6
-plotly==2.0.8
-psutil==5.7.0
+plotly
 pytz==2019.3
 requests==2.23.0
 six==1.14.0
