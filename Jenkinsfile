@@ -35,15 +35,14 @@ pipeline {
             when {
                 branch 'master'
             }
-            steps {
-                input 'Deploy to Production?'
-                milestone(1)
-                kubernetesDeploy(
-                    kubeconfigId: 'kubeconfig',
-                    configs: 'kube-dark.yml',
-                    enableConfigSubstitution: true
-                )
-            }
+            stage('List pods') {
+                withKubeConfig([credentialsId: 'kubeconfig',
+                                caCertificate: '<ca-certificate>',
+                                serverUrl: 'https://192.168.7.17:6443',
+                                ]) {
+                  sh 'kubectl apply -f /var/lib/jenkins/workspace/dark_weather_master/kube-dark.yml'
+                }
+            }    
         }
     }
 }
