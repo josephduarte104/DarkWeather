@@ -35,7 +35,6 @@ pipeline {
             when {
                 branch 'master'
             }
-            stage('List pods') {
                 withKubeConfig([credentialsId: 'kubeconfig',
                                 caCertificate: '<ca-certificate>',
                                 serverUrl: 'https://192.168.7.17:6443',
