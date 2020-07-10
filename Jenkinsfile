@@ -42,10 +42,9 @@ pipeline {
                                 caCertificate: '<ca-certificate>',
                                 serverUrl: 'https://192.168.7.17:6443',
                                 ]) {
-                       sh 'kubectl apply -f /var/lib/jenkins/workspace/dark_weather_master/kube-dark.yml'
-                    }
-                }    
+                    sh 'kubectl apply -f /var/lib/jenkins/workspace/dark_weather_master/kube-dark.yml'
+                }
             }    
-        }
+        }    
     }
 }
