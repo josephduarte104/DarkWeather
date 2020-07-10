@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: dark-weather
-        image: $DOCKER_IMAGE_NAME:$BUILD_NUMBER
+        image: jduarte104/darkweather:latest
         ports:
         - containerPort: 5001
