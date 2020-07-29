@@ -1,8 +1,15 @@
 apiVersion: v1
+kind: Namespace
+metadata:
+  name: darkweather
+  
+---
+
+apiVersion: v1
 kind: Service
 metadata:
   name: dark-weather-service
-  namespace: ingress-nginx
+  namespace: darkweather
 spec:
   type: NodePort
   selector:
@@ -18,11 +25,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dark-weather-deployment
-  namespace: ingress-nginx
+  namespace: darkweather
   labels:
     app: dark-weather
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: dark-weather
