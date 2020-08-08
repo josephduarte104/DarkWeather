@@ -29,7 +29,7 @@ metadata:
   labels:
     app: dark-weather
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app: dark-weather
