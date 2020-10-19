@@ -40,7 +40,6 @@ pipeline {
       }
       steps {
         input 'Deploy to Production?'
-        milestone 1
         withKubeConfig(credentialsId: 'kubeconfig') {
           sh 'kubectl apply -f /var/lib/jenkins/workspace/dark_weather_master/kube-dark.yml'
         }
