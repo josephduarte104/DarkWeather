@@ -41,6 +41,6 @@ spec:
     spec:
       containers:
       - name: dark-weather
-        image: jduarte104/darkweather:${BUDDY_EXECUTION_ID}
+        image: jduarte104/darkweather:latest
         ports:
         - containerPort: 5001
