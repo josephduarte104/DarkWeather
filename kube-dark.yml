@@ -41,6 +41,6 @@ spec:
     spec:
       containers:
       - name: dark-weather
-        image: jduarte104/darkweather:latest
+        image: jduarte104/darkweather:11
         ports:
         - containerPort: 5001
