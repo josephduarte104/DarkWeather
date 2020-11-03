@@ -18,5 +18,3 @@ A weather app that was developed on the premise of a personal challenge to turn 
 
 ```
 
-
-Working app found at <http://darkweatherprototype.herokuapp.com> 
