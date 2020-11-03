@@ -17,6 +17,3 @@ A weather app that was developed on the premise of a personal challenge to turn 
     python3 app.py
 
 ```
-
-
-Working app found at <http://darkweatherprototype.herokuapp.com> 
